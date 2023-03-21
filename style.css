@@ -1,0 +1,81 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=IBM+Plex+Sans:wght@700&family=Montserrat:wght@800&family=Open+Sans:wght@300&family=Pacifico&display=swap');
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+* {
+    font-family: "open sans" ;
+}
+:root{
+    --dark-color: black;
+}
+
+
+
+@keyframes inFromTop {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+body {
+    background-color:#000000 !important ;
+
+}
+h3 {
+   color:#88D498 !important;
+   text-shadow:#000000 2px 2px !important;
+}
+
+.spacer {
+    height: 30px;
+}
+.header {
+    font-family: "Creepster";
+    color:#146d27;
+    animation: 2s ease-in 0s 1 inFromTop;
+}
+
+.headerAfterAnimation {
+    text-shadow: #a30c0c 0px 6px,rgb(73, 6, 6) 0px 12px;
+    transition: text-shadow 3s; 
+}
+a:link { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+a .about {
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color:#146d27;
+}
+a {
+    font-family: "Creepster";
+    font-size:x-large;
+}
+.hover {
+    font-size: xx-large;
+    color: #146d27;
+    text-shadow:#a30c0c 0px 6px, rgb(73, 6, 6) 0px 12px;
+    transition: color 1s, text-shadow 1s;
+}
+
+
+p {
+    color:gray;
+}
+
+.inputbox {
+    background-color:#146d27;
+}
+
+.linebreaker {
+    border-bottom: 1px solid red;
+}

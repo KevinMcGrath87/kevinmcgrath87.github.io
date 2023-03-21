@@ -10,27 +10,71 @@
 </head>
 <body>
     <!-- here is the first div i.e. the main eyecatching moment! -->
-    <div class="container ">
-        <div class="row gy-2">
-            <div class="d-flex col border justify-content-center">
-                <h1>Kevin McGrath</h1>
+    <div class="container">
+        <div class="row spacer">
+        </div>
+        <div class="row gy-2 bg-black">
+            <div class="d-flex col  justify-content-center">
+                <h1 class = "header display-1">Kevin McGrath</h1>
             </div>
         </div>
-        <div class="row ">
-            <div class=" border d-flex justify-content-center col align-items-center">
-                <p>Software Engineer</p>
+        <div class="row spacer">
+        </div>
+        <div class="row">
+            <div class=" col d-flex justify-content-center"> 
             </div>
-            <div class="border col d-flex justify-content-center">
-                <p>Scientist</p>
+            <div class="linebreaker col d-flex justify-content-center col-8 align-items-center ">
+                <h3>Software Engineer | Full Stack Developer </h3>
             </div>
-            <div class=" border d-flex col justify-content-center ">
-                <p>Hero</p>
+            <div class="  d-flex col justify-content-center ">
             </div>
         </div>
         <div class="row">
-            <div class="col border text-center">
-                <p>beep bop</p>
+            <div class="  d-flex justify-content-center col align-items-center ">
+                <a id = "about" class = "clickable noStyle" href ="#">About Me</a>
             </div>
+            <div class = "d-flex justify-content-center col aligh-items-center">
+                <a id = "resumeAnchor" class = "clickable noStyle" href="">My Resume</a>
+            </div>
+            <div class="  d-flex col justify-content-center  ">
+                <a class ="clickable noStyle" href ="https://github.com/KevinMcGrath87/cd_final_project" >My Projects</a>
+            </div>
+        </div>
+        <div class = "row">
+            <p class = "information" id = "info" hidden ="true">I am a full stack developer who graduated from Coding Dojo in 2023. The technologies I currently utilize the most are Python, Flask, Django, Java, Spring, SpringTools, MySql, AWS, Git, HTML, CSS, and Javascript. 
+            <br>
+            I also have Master of Fine Arts degree from the School of the Art Institute of Chicago and a Bachelor's degree in Fine Arts from Illinois State University. I am still an active artist working and performing in Chicago. The artwork I create is increasingly influenced by technology and the new skills and concepts I have learned as a developer. Learning to be a software developer has helped me to grow creatively and I am excited to be able to offer that skill to clients and employers. 
+            <br>I am also something of an arm-chair logician and mathematician (I know a lot of fun and challenging logic puzzles and tricks) as well as a judoka (judo player); I study judo at Tohkon Judo Academy in Chicago where I live.  
+            </p>
+        </div>
+        <div class = "row" >
+            <object id = "resume" hidden = "true" type = "application/pdf" data = "assets\Kevin.McGrath.Resume.pdf" height = "1000px"></object>
+        </div>
+        <div class = "row d-flex">
+            <div class="col">
+                <form id = "emailForm"class =" form d-flex flex-column align-items-center" onsubmit="sendEmail(); reset(); return false;" >
+                    <h3>Contact Me:</h3>
+                    <input class = " inputbox w-50 my-2 p-2"id = "name"  type = "text" placeholder="Your Name" required>
+                    <input class = "inputbox w-50 my-2 p-2" id = "email" type = "email" placeholder="Your Email" required>
+                    <textarea class = "inputbox w-50 my-2 p-2" id = "message" rows = "4" placeholder="Your Message" ></textarea>
+                    <!-- <input id = "message" type = "text" placeholder="Your Message" required> -->
+                    <input type = "submit" >
+                </div>
+                
+            </form>
+        </div>
+        <div class="row my-4">
+            <div class ="col-4 h-100"></div>
+            <div class="col-1 h-25  d-flex align-items-center ">
+                <img class = "img-fluid" src = "assets/pythonLogo.png"/>
+            </div>
+            <div class = "col-1 d-flex h-25 ">
+                <img class = "img-fluid" src = "assets/javaLogo.png"/>
+            </div>
+            <div class = "col-2 d-flex h-25 ">
+                <img class = "img-fluid" src ="assets/mySQLLogo.png">
+            </div>
+            <div class ="col-4"></div>
         </div>
     </div>
 
@@ -38,5 +82,6 @@
     <script src = "script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src = "https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
