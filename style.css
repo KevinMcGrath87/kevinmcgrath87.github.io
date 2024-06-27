@@ -5,7 +5,7 @@
 @import "../node_modules/bootstrap/scss/mixins";
 
 * {
-    font-family: "open sans" ;
+    font-family: "Times New Roman" ;
 }
 :root{
     --dark-color: black;
@@ -21,13 +21,38 @@
         transform:translateY(0);
     }
 }
-body {
-    background-color:#000000 !important ;
 
+@keyframes flash {
+    from {
+        color:red;
+    }
+    to{
+        color:yellow
+    }
+    to{
+        color:#146d27;
+
+    }
 }
+
+
+
+
+body{
+    background-color: #000000 !important ;
+}
+
+/* body .container {
+    background-image: url('assets/dante-inferno.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+} */
+
+
+
 h3 {
-   color:#88D498 !important;
-   text-shadow:#000000 2px 2px !important;
+    color:#88D498 !important;
+    text-shadow:#000000 2px 2px !important;
 }
 
 .spacer {
@@ -36,7 +61,12 @@ h3 {
 .header {
     font-family: "Creepster";
     color:#146d27;
-    animation: 2s ease-in 0s 1 inFromTop;
+    /* animation: 2s ease-in 0s 1 inFromTop; */
+    animation-name: flash, inFromTop;
+    animation-duration: .2s,3s;
+    animation-iteration-count: infinite, 1;
+    
+
 }
 
 .headerAfterAnimation {
@@ -49,6 +79,7 @@ a:hover { text-decoration: none; }
 
 
 a:active { text-decoration: none; }
+
 a .about {
     text-decoration: none;
 }
@@ -69,13 +100,26 @@ a {
 
 
 p {
-    color:gray;
+    font-size: x-large;
+    color:red;
+    text-shadow:3px 0px 5px  rgb(0, 151, 0);
+    padding: 30px;
 }
 
 .inputbox {
+    border-radius: 6px;
     background-color:#146d27;
+    box-shadow: 0px 0px 100px 1px  red;
 }
 
 .linebreaker {
     border-bottom: 1px solid red;
+    margin-bottom: 50px;
+}
+
+
+
+.description {
+    font-size: xx-large;
+    padding: 50px;
 }

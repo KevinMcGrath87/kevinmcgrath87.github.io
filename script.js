@@ -5,10 +5,7 @@ const headerText = document.getElementsByClassName("header")[0];
 const emailForm = document.getElementById("emailForm");
 const myResume = document.getElementById("resume");
 
-console.log(myResume.id);
 
-
-console.log(headerText);
 function makeArray(htmlCol){
     returnArray = [];
     for(i = 0; i < htmlCol.length; i++){
@@ -23,11 +20,9 @@ aboutButton.addEventListener("click", (e)=>{
     e.preventDefault();
     if (document.getElementById("info").hidden == true){
         document.getElementById("info").hidden=false;
-        console.log("ippsidaips")
     }
     else{
         document.getElementById("info").hidden = true;
-        console.log('oops');
     }
 }
 )
