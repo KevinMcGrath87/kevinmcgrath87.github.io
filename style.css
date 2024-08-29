@@ -125,5 +125,7 @@ p {
 }
 
 .btn {
+    color: white;
     border-radius: 3px;
+    border-color: red;
 }
