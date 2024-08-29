@@ -125,7 +125,7 @@ p {
 }
 
 .btn {
+    font-family: "creepster";
     color: white;
-    border-radius: 3px;
     border-color: red;
 }
