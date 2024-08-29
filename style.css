@@ -124,3 +124,10 @@ p {
     padding: 50px;
 }
 
+.sendButton {
+    background-color: #146d27;
+    border-radius: 6px;
+    box-shadow: 0px 0px 100px 1px  red;
+    padding: 6px;
+
+}
