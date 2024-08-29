@@ -123,3 +123,7 @@ p {
     font-size: xx-large;
     padding: 50px;
 }
+
+.btn {
+    border-radius: 3px;
+}
