@@ -20,7 +20,7 @@
         </div>
         <div class="row justify-content-center">
             <div class = "col-4 d-flex flex-column justify-content-center aligh-items-center p-4">
-                <img class = " rounded-pill h-2 img-fluid" src ="assets/myFace.jpg">
+                <img class = " rounded-pill h-3 img-fluid" src ="assets/myFace.jpg">
             </div>
         </div>
         <div class="row">
@@ -57,13 +57,13 @@
         </div>
         <div class = "row d-flex">
             <div class="col">
-                <form id = "emailForm"class =" form d-flex flex-column align-items-center" onsubmit="sendEmail(); reset(); return false;" >
+                <form id = "emailForm" action = "https://formspree.io/f/manwvaob" method = "POST" class =" form d-flex flex-column align-items-center" >
                     <h3>Contact Me:</h3>
                     <input class = " inputbox w-50 my-2 p-2"id = "name"  type = "text" placeholder="Your Name" required>
-                    <input class = "inputbox w-50 my-2 p-2" id = "email" type = "email" placeholder="Your Email" required>
-                    <textarea class = "inputbox w-50 my-2 p-2" id = "message" rows = "4" placeholder="Your Message" ></textarea>
+                    <input name = "email" class = "inputbox w-50 my-2 p-2" id = "email" type = "email" placeholder="Your Email" required>
+                    <textarea name = "message" class = "inputbox w-50 my-2 p-2" id = "message" rows = "4" placeholder="Your Message" ></textarea>
                     <!-- <input id = "message" type = "text" placeholder="Your Message" required> -->
-                    <input type = "submit" >
+                    <button type="submit">Send</button>
                 </div>
                 
             </form>
